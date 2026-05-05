@@ -32,7 +32,7 @@ class AggregateResult(BaseModel):
     chunks: list[ChunkResult]
     elapsed_ms: float
 
-
+# JobStatus represents the current status of a job, including its progress and result if completed.
 class JobStatus(BaseModel):
     job_id: str
     state: Literal["queued", "running", "completed", "failed"]
